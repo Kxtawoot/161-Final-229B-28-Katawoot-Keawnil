@@ -10,11 +10,12 @@ public class Dog : Animal
 
     public override float CalculateFoodRequirement(float Calculate)
     {
-        Calculate = (dailyFoodCosumtion)* (activityLevel)* 7;
+        Calculate = (dailyFoodCosumtion) * (activityLevel) * 7;
     }
 
-public void MakeSound()
+    public void MakeSound()
     {
-        Debug.Log($"{animalName} make a sound");
+        Debug.Log($"{animalName} bark ");
     }
+
 }

@@ -20,20 +20,28 @@ public abstract class Animal : MonoBehaviour
     }
     public void Init()
     {
-        
+        Animal.MakeSound();
+        Animal.DisplayName();
+        Animal.CalculateFoodRequirement();
     }
-    public abstract float CalculateFoodRequirement()
+    public abstract float CalculateFoodRequirement(float Calculate)
     {
-
+        Dog.Calculate;
+        Bird.Calculate;
     }
     public void MakeSound()
     {
-        
+        Debug.Log($"{Dog.animalName} Bark : Woof Woof");
+        Debug.Log($"{Bird.animalName} Chirps : Tweet Tweet");
     }
     public void DisplayName()
     {
-        
+        Debug.Log($"This is a {Bird.animalName}");
+        Debug.Log($"This is a {Dog.animalName}");
     }
+
+
+
 
 
 }
